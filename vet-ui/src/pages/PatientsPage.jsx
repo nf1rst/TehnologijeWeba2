@@ -17,6 +17,7 @@ export default function PatientsPage() {
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage]= useState(1)
   const [postsPerPage, setPostsPerPage]=useState(10)
+  const [search, setSearch]=useState("")
   
 
   useEffect(()=>{
@@ -53,12 +54,18 @@ export default function PatientsPage() {
   ];
 
   const safePatients = Array.isArray(patients) ? patients : [];
+
+  const query = search.trim().toLowerCase()
+  const filteredPatients = query?
+    safePatients.filter((patient)=>Object.values(patient).some((val)=>
+    String(val??"").toLowerCase().includes(query))):safePatients
+
   const totalPages = Math.max(1, Math.ceil(safePatients.length / postsPerPage));
 
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
 
-  const rows = safePatients.slice(firstPostIndex, lastPostIndex);
+  const rows = filteredPatients.slice(firstPostIndex, lastPostIndex);
 
   return (
     <>
@@ -69,7 +76,10 @@ export default function PatientsPage() {
 
       <Card>
         <div className="toolbar">
-          <SearchBox value="" onChange={() => {}} label="Search patients" placeholder="Name, breed, chip" />
+          <SearchBox  onChange={(newText)=>{
+            setSearch(newText);
+            setCurrentPage(1)
+          }} label="Search patients" placeholder="Name, breed, chip" />
           <PatientFilters species={species} speciesId="" neutered="" onSpeciesChange={() => {}} onNeuteredChange={() => {}} onReset={() => {}} />
         </div>
 
