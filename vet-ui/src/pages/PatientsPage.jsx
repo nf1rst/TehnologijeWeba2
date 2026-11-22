@@ -5,26 +5,50 @@ import DataTable from '../components/ui/DataTable.jsx';
 import Pagination from '../components/ui/Pagination.jsx';
 import AsyncBoundary from '../components/ui/AsyncBoundary.jsx';
 import PatientFilters from '../components/patients/PatientFilters.jsx';
+import { useEffect, useState } from 'react';
+import { patientHttp } from '../services/patientService.jsx';
+import { speciesHttp } from '../services/SpeciesService.jsx';
 
-// STATIC PLACEHOLDERS: replace every constant below with hook/store values.
-const sample = [
-  { id: 1, name: 'Luna', speciesId: 1, breed: 'Labrador', weightKg: 28.4, neutered: true },
-  { id: 2, name: 'Miso', speciesId: 2, breed: 'Domestic shorthair', weightKg: 4.1, neutered: false },
-];
-const species = [{ id: 1, name: 'Dog' }, { id: 2, name: 'Cat' }];
 
-const columns = [
-  { key: 'name', label: 'Name', sortable: true, render: (r) => <Link to={`/patients/${r.id}`}>{r.name}</Link> },
-  { key: 'speciesId', label: 'Species', sortable: true, render: (r) => species.find((s) => s.id === r.speciesId)?.name },
-  { key: 'breed', label: 'Breed', sortable: true },
-  { key: 'weightKg', label: 'Weight (kg)', sortable: true },
-  { key: 'neutered', label: 'Neutered', sortable: true, render: (r) => (r.neutered ? 'Yes' : 'No') },
-];
 
-export default function PatientsPage() {
-  // TODO(logic): one list hook returns rows, status, error, search, sort, filters, page, pages, pageSize and setters.
+export default function PatientsPage() {  
+  const [patients, setPatients]=useState([]);
+  const [species, setSpecies]=useState([]);
+  const [loading, setLoading]=useState(false);
+  const [error, setError] = useState(null);
+  
+
+  useEffect(()=>{
+    async function loadPatients(){
+      try{
+        setLoading(true);
+        const patients = await patientHttp.getAll();
+        const species = await speciesHttp.getAll();
+
+        setPatients(patients);
+        setSpecies(species);
+      }
+      catch(err){
+        setError(err)
+      }
+      finally{
+        setLoading(false)
+      }
+    }
+    loadPatients()
+  }, []); 
   const status = 'succeeded';
-  const rows = sample;
+  const rows = patients;
+
+  
+  const columns = [
+    { key: 'name', label: 'Name', sortable: true, render: (r) => <Link to={`/patients/${r.id}`}>{r.name}</Link> },
+    { key: 'speciesId', label: 'Species', sortable: true, render: (r) => species.find((s) => s.id === r.speciesId)?.name },
+    { key: 'breed', label: 'Breed', sortable: true },
+    { key: 'weightKg', label: 'Weight (kg)', sortable: true },
+    { key: 'neutered', label: 'Neutered', sortable: true, render: (r) => (r.neutered ? 'Yes' : 'No') },
+  ];
+
 
   return (
     <>
