@@ -3,7 +3,6 @@ import Card from '../components/ui/Card.jsx';
 import SearchBox from '../components/ui/SearchBox.jsx';
 import DataTable from '../components/ui/DataTable.jsx';
 import Pagination from '../components/ui/Pagination.jsx';
-import AsyncBoundary from '../components/ui/AsyncBoundary.jsx';
 import PatientFilters from '../components/patients/PatientFilters.jsx';
 import { useEffect, useState } from 'react';
 import { patientHttp } from '../services/patientService.jsx';
@@ -16,17 +15,22 @@ export default function PatientsPage() {
   const [species, setSpecies]=useState([]);
   const [loading, setLoading]=useState(false);
   const [error, setError] = useState(null);
+  const [currentPage, setCurrentPage]= useState(1)
+  const [postsPerPage, setPostsPerPage]=useState(10)
   
 
   useEffect(()=>{
     async function loadPatients(){
       try{
         setLoading(true);
-        const patients = await patientHttp.getAll();
-        const species = await speciesHttp.getAll();
+        const patientRes = await patientHttp.getAll();
+        const speciesRes = await speciesHttp.getAll();
 
-        setPatients(patients);
-        setSpecies(species);
+        const patientsList = Array.isArray(patientRes)?patientRes:(patientRes?.data || patientRes?.items ||[]);
+        const speciesList = Array.isArray(speciesRes)?speciesRes:(speciesRes?.data || speciesRes?.items ||[]);
+
+        setPatients(patientsList);
+        setSpecies(speciesList);
       }
       catch(err){
         setError(err)
@@ -38,7 +42,6 @@ export default function PatientsPage() {
     loadPatients()
   }, []); 
   const status = 'succeeded';
-  const rows = patients;
 
   
   const columns = [
@@ -49,6 +52,13 @@ export default function PatientsPage() {
     { key: 'neutered', label: 'Neutered', sortable: true, render: (r) => (r.neutered ? 'Yes' : 'No') },
   ];
 
+  const safePatients = Array.isArray(patients) ? patients : [];
+  const totalPages = Math.max(1, Math.ceil(safePatients.length / postsPerPage));
+
+  const lastPostIndex = currentPage * postsPerPage;
+  const firstPostIndex = lastPostIndex - postsPerPage;
+
+  const rows = safePatients.slice(firstPostIndex, lastPostIndex);
 
   return (
     <>
@@ -63,7 +73,6 @@ export default function PatientsPage() {
           <PatientFilters species={species} speciesId="" neutered="" onSpeciesChange={() => {}} onNeuteredChange={() => {}} onReset={() => {}} />
         </div>
 
-        <AsyncBoundary status={status} isEmpty={rows.length === 0} emptyTitle="No patients match" emptyHint="Try a different search or clear the filters." onRetry={() => {}}>
           <DataTable
             columns={columns}
             rows={rows}
@@ -76,9 +85,12 @@ export default function PatientsPage() {
               </>
             )}
           />
-          <Pagination page={1} pages={1} pageSize={10} onPageChange={() => {}} onPageSizeChange={() => {}} />
-        </AsyncBoundary>
+          <Pagination page={currentPage} pages={totalPages} pageSize={postsPerPage} onPageChange={(newPage)=>setCurrentPage(newPage)} onPageSizeChange={(newSize)=>{
+            setPostsPerPage(newSize);
+            setCurrentPage(1);
+          }} />
       </Card>
     </>
   );
 }
+
