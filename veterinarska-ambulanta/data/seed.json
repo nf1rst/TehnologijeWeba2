@@ -1,0 +1,1717 @@
+{
+  "species": [
+    {
+      "id": 1,
+      "name": "Pas"
+    },
+    {
+      "id": 2,
+      "name": "Mačka"
+    },
+    {
+      "id": 3,
+      "name": "Kunić"
+    },
+    {
+      "id": 4,
+      "name": "Ptica"
+    },
+    {
+      "id": 5,
+      "name": "Gmaz"
+    },
+    {
+      "id": 6,
+      "name": "Glodavac"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "firstName": "Marija",
+      "lastName": "Marić",
+      "email": "marija.maric1@mail.hr",
+      "phone": "+385 99 817 7593"
+    },
+    {
+      "id": 2,
+      "firstName": "Karlo",
+      "lastName": "Petrović",
+      "email": "karlo.petrovic2@mail.hr",
+      "phone": "+385 92 967 7552"
+    },
+    {
+      "id": 3,
+      "firstName": "Ivan",
+      "lastName": "Perić",
+      "email": "ivan.peric3@mail.hr",
+      "phone": "+385 97 107 2863"
+    },
+    {
+      "id": 4,
+      "firstName": "Katarina",
+      "lastName": "Bošnjak",
+      "email": "katarina.bosnjak4@mail.hr",
+      "phone": "+385 92 596 4002"
+    },
+    {
+      "id": 5,
+      "firstName": "Fran",
+      "lastName": "Lovrić",
+      "email": "fran.lovric5@mail.hr",
+      "phone": "+385 97 866 6523"
+    },
+    {
+      "id": 6,
+      "firstName": "Toni",
+      "lastName": "Barišić",
+      "email": "toni.barisic6@mail.hr",
+      "phone": "+385 99 723 1754"
+    },
+    {
+      "id": 7,
+      "firstName": "Borna",
+      "lastName": "Grgić",
+      "email": "borna.grgic7@mail.hr",
+      "phone": "+385 98 930 9980"
+    },
+    {
+      "id": 8,
+      "firstName": "Filip",
+      "lastName": "Marić",
+      "email": "filip.maric8@mail.hr",
+      "phone": "+385 97 238 4043"
+    },
+    {
+      "id": 9,
+      "firstName": "Sara",
+      "lastName": "Kovačić",
+      "email": "sara.kovacic9@mail.hr",
+      "phone": "+385 97 658 2796"
+    },
+    {
+      "id": 10,
+      "firstName": "Dominik",
+      "lastName": "Radić",
+      "email": "dominik.radic10@mail.hr",
+      "phone": "+385 97 983 7166"
+    },
+    {
+      "id": 11,
+      "firstName": "Paula",
+      "lastName": "Filipović",
+      "email": "paula.filipovic11@mail.hr",
+      "phone": "+385 92 571 5490"
+    },
+    {
+      "id": 12,
+      "firstName": "Marko",
+      "lastName": "Jurić",
+      "email": "marko.juric12@mail.hr",
+      "phone": "+385 99 771 3303"
+    },
+    {
+      "id": 13,
+      "firstName": "Josip",
+      "lastName": "Popović",
+      "email": "josip.popovic13@mail.hr",
+      "phone": "+385 91 514 4200"
+    },
+    {
+      "id": 14,
+      "firstName": "Marko",
+      "lastName": "Šarić",
+      "email": "marko.saric14@mail.hr",
+      "phone": "+385 91 428 7571"
+    },
+    {
+      "id": 15,
+      "firstName": "Iva",
+      "lastName": "Perković",
+      "email": "iva.perkovic15@mail.hr",
+      "phone": "+385 95 211 4706"
+    },
+    {
+      "id": 16,
+      "firstName": "Iva",
+      "lastName": "Vuković",
+      "email": "iva.vukovic16@mail.hr",
+      "phone": "+385 99 800 8738"
+    },
+    {
+      "id": 17,
+      "firstName": "Nika",
+      "lastName": "Marković",
+      "email": "nika.markovic17@mail.hr",
+      "phone": "+385 91 670 3968"
+    },
+    {
+      "id": 18,
+      "firstName": "Sara",
+      "lastName": "Kovačić",
+      "email": "sara.kovacic18@mail.hr",
+      "phone": "+385 91 909 9230"
+    },
+    {
+      "id": 19,
+      "firstName": "Borna",
+      "lastName": "Matić",
+      "email": "borna.matic19@mail.hr",
+      "phone": "+385 92 814 1007"
+    },
+    {
+      "id": 20,
+      "firstName": "Ivan",
+      "lastName": "Grgić",
+      "email": "ivan.grgic20@mail.hr",
+      "phone": "+385 95 821 9849"
+    },
+    {
+      "id": 21,
+      "firstName": "Josip",
+      "lastName": "Babić",
+      "email": "josip.babic21@mail.hr",
+      "phone": "+385 95 924 4099"
+    },
+    {
+      "id": 22,
+      "firstName": "Laura",
+      "lastName": "Grgić",
+      "email": "laura.grgic22@mail.hr",
+      "phone": "+385 98 857 4172"
+    },
+    {
+      "id": 23,
+      "firstName": "Lea",
+      "lastName": "Bošnjak",
+      "email": "lea.bosnjak23@mail.hr",
+      "phone": "+385 99 484 2400"
+    },
+    {
+      "id": 24,
+      "firstName": "Toni",
+      "lastName": "Knežević",
+      "email": "toni.knezevic24@mail.hr",
+      "phone": "+385 92 851 6519"
+    },
+    {
+      "id": 25,
+      "firstName": "Paula",
+      "lastName": "Popović",
+      "email": "paula.popovic25@mail.hr",
+      "phone": "+385 99 978 1309"
+    },
+    {
+      "id": 26,
+      "firstName": "David",
+      "lastName": "Božić",
+      "email": "david.bozic26@mail.hr",
+      "phone": "+385 98 930 1166"
+    }
+  ],
+  "patients": [
+    {
+      "id": 1,
+      "name": "Mia",
+      "speciesId": 2,
+      "ownerId": 26,
+      "breed": "Europska kratkodlaka",
+      "dateOfBirth": "2012-01-10",
+      "weightKg": 5.96,
+      "neutered": true
+    },
+    {
+      "id": 2,
+      "name": "Max",
+      "speciesId": 1,
+      "ownerId": 7,
+      "breed": "Hrvatski ovčar",
+      "dateOfBirth": "2023-12-16",
+      "chipNumber": "191015500607284",
+      "weightKg": 16.92,
+      "neutered": false
+    },
+    {
+      "id": 3,
+      "name": "Šapica",
+      "speciesId": 3,
+      "ownerId": 21,
+      "breed": "Lavlja glava",
+      "dateOfBirth": "2022-12-06",
+      "weightKg": 1.91,
+      "neutered": false
+    },
+    {
+      "id": 4,
+      "name": "Čupko",
+      "speciesId": 3,
+      "ownerId": 20,
+      "breed": "Patuljasti kunić",
+      "dateOfBirth": "2018-11-04",
+      "weightKg": 1.99,
+      "neutered": false
+    },
+    {
+      "id": 5,
+      "name": "Luna",
+      "speciesId": 4,
+      "ownerId": 13,
+      "breed": "Tigrica",
+      "dateOfBirth": "2018-03-23",
+      "weightKg": 0.05,
+      "neutered": false
+    },
+    {
+      "id": 6,
+      "name": "Pegi",
+      "speciesId": 1,
+      "ownerId": 26,
+      "breed": "Zlatni retriver",
+      "dateOfBirth": "2012-07-19",
+      "chipNumber": "191830411702425",
+      "weightKg": 32.53,
+      "neutered": false
+    },
+    {
+      "id": 7,
+      "name": "Mrvica",
+      "speciesId": 2,
+      "ownerId": 24,
+      "breed": "Europska kratkodlaka",
+      "dateOfBirth": "2023-09-08",
+      "chipNumber": "191754800639594",
+      "weightKg": 5.72,
+      "neutered": true
+    },
+    {
+      "id": 8,
+      "name": "Bobi",
+      "speciesId": 1,
+      "ownerId": 23,
+      "breed": "Njemački ovčar",
+      "dateOfBirth": "2022-09-05",
+      "chipNumber": "191957559235962",
+      "weightKg": 38.35,
+      "neutered": true
+    },
+    {
+      "id": 9,
+      "name": "Charlie",
+      "speciesId": 4,
+      "ownerId": 22,
+      "breed": "Tigrica",
+      "dateOfBirth": "2013-08-27",
+      "weightKg": 0.05,
+      "neutered": false
+    },
+    {
+      "id": 10,
+      "name": "Rocky",
+      "speciesId": 3,
+      "ownerId": 8,
+      "breed": "Patuljasti kunić",
+      "dateOfBirth": "2015-11-04",
+      "weightKg": 1.38,
+      "neutered": false
+    },
+    {
+      "id": 11,
+      "name": "Šapica",
+      "speciesId": 1,
+      "ownerId": 10,
+      "breed": "Jack Russell terijer",
+      "dateOfBirth": "2023-12-24",
+      "chipNumber": "191822978865266",
+      "weightKg": 6.12,
+      "neutered": true
+    },
+    {
+      "id": 12,
+      "name": "Nala",
+      "speciesId": 2,
+      "ownerId": 17,
+      "breed": "Britanska kratkodlaka",
+      "dateOfBirth": "2013-11-02",
+      "chipNumber": "191645318070649",
+      "weightKg": 5.84,
+      "neutered": true
+    },
+    {
+      "id": 13,
+      "name": "Fifi",
+      "speciesId": 1,
+      "ownerId": 23,
+      "breed": "Hrvatski ovčar",
+      "dateOfBirth": "2023-11-21",
+      "chipNumber": "191358783079107",
+      "weightKg": 13.25,
+      "neutered": true
+    },
+    {
+      "id": 14,
+      "name": "Coco",
+      "speciesId": 1,
+      "ownerId": 10,
+      "breed": "Dalmatinski pas",
+      "dateOfBirth": "2022-08-12",
+      "chipNumber": "191327385245428",
+      "weightKg": 26.88,
+      "neutered": true
+    },
+    {
+      "id": 15,
+      "name": "Bobi",
+      "speciesId": 1,
+      "ownerId": 13,
+      "breed": "Dalmatinski pas",
+      "dateOfBirth": "2017-08-20",
+      "chipNumber": "191542407218669",
+      "weightKg": 22.78,
+      "neutered": true
+    },
+    {
+      "id": 16,
+      "name": "Zara",
+      "speciesId": 2,
+      "ownerId": 12,
+      "breed": "Europska kratkodlaka",
+      "dateOfBirth": "2014-10-09",
+      "chipNumber": "191774352282508",
+      "weightKg": 3.66,
+      "neutered": true
+    },
+    {
+      "id": 17,
+      "name": "Rex",
+      "speciesId": 4,
+      "ownerId": 11,
+      "breed": "Kanarinac",
+      "dateOfBirth": "2013-12-08",
+      "weightKg": 0.02,
+      "neutered": false
+    },
+    {
+      "id": 18,
+      "name": "Simba",
+      "speciesId": 2,
+      "ownerId": 7,
+      "breed": "Mješanac",
+      "dateOfBirth": "2015-06-12",
+      "weightKg": 5.36,
+      "neutered": true
+    },
+    {
+      "id": 19,
+      "name": "Šapica",
+      "speciesId": 6,
+      "ownerId": 24,
+      "breed": "Hrčak",
+      "dateOfBirth": "2017-08-25",
+      "weightKg": 0.15,
+      "neutered": false
+    },
+    {
+      "id": 20,
+      "name": "Leo",
+      "speciesId": 1,
+      "ownerId": 16,
+      "breed": "Jack Russell terijer",
+      "dateOfBirth": "2020-12-26",
+      "chipNumber": "191881230168252",
+      "weightKg": 5.74,
+      "neutered": false
+    },
+    {
+      "id": 21,
+      "name": "Simba",
+      "speciesId": 1,
+      "ownerId": 2,
+      "breed": "Jack Russell terijer",
+      "dateOfBirth": "2020-08-05",
+      "chipNumber": "191336183264594",
+      "weightKg": 6.82,
+      "neutered": false
+    },
+    {
+      "id": 22,
+      "name": "Lola",
+      "speciesId": 2,
+      "ownerId": 12,
+      "breed": "Europska kratkodlaka",
+      "dateOfBirth": "2023-10-05",
+      "weightKg": 5.7,
+      "neutered": true
+    },
+    {
+      "id": 23,
+      "name": "Coco",
+      "speciesId": 1,
+      "ownerId": 9,
+      "breed": "Njemački ovčar",
+      "dateOfBirth": "2021-02-24",
+      "chipNumber": "191077504841215",
+      "weightKg": 26.64,
+      "neutered": false
+    },
+    {
+      "id": 24,
+      "name": "Mia",
+      "speciesId": 1,
+      "ownerId": 6,
+      "breed": "Njemački ovčar",
+      "dateOfBirth": "2016-06-15",
+      "chipNumber": "191064600014093",
+      "weightKg": 39.7,
+      "neutered": false
+    },
+    {
+      "id": 25,
+      "name": "Charlie",
+      "speciesId": 2,
+      "ownerId": 23,
+      "breed": "Europska kratkodlaka",
+      "dateOfBirth": "2019-11-15",
+      "chipNumber": "191774077013226",
+      "weightKg": 3.39,
+      "neutered": false
+    },
+    {
+      "id": 26,
+      "name": "Simba",
+      "speciesId": 2,
+      "ownerId": 17,
+      "breed": "Britanska kratkodlaka",
+      "dateOfBirth": "2021-11-10",
+      "weightKg": 6.75,
+      "neutered": true
+    },
+    {
+      "id": 27,
+      "name": "Maša",
+      "speciesId": 5,
+      "ownerId": 23,
+      "breed": "Bradata agama",
+      "dateOfBirth": "2019-01-20",
+      "weightKg": 0.32,
+      "neutered": false
+    },
+    {
+      "id": 28,
+      "name": "Rex",
+      "speciesId": 2,
+      "ownerId": 23,
+      "breed": "Europska kratkodlaka",
+      "dateOfBirth": "2023-01-13",
+      "weightKg": 3.32,
+      "neutered": true
+    },
+    {
+      "id": 29,
+      "name": "Max",
+      "speciesId": 1,
+      "ownerId": 8,
+      "breed": "Mješanac",
+      "dateOfBirth": "2012-03-09",
+      "chipNumber": "191247793855155",
+      "weightKg": 14.71,
+      "neutered": true
+    },
+    {
+      "id": 30,
+      "name": "Coco",
+      "speciesId": 6,
+      "ownerId": 24,
+      "breed": "Hrčak",
+      "dateOfBirth": "2025-12-16",
+      "weightKg": 0.17,
+      "neutered": false
+    },
+    {
+      "id": 31,
+      "name": "Mrvica",
+      "speciesId": 1,
+      "ownerId": 18,
+      "breed": "Njemački ovčar",
+      "dateOfBirth": "2018-08-07",
+      "chipNumber": "191496017777402",
+      "weightKg": 29.37,
+      "neutered": true
+    },
+    {
+      "id": 32,
+      "name": "Max",
+      "speciesId": 5,
+      "ownerId": 11,
+      "breed": "Bradata agama",
+      "dateOfBirth": "2016-10-25",
+      "weightKg": 0.33,
+      "neutered": false
+    },
+    {
+      "id": 33,
+      "name": "Rocky",
+      "speciesId": 1,
+      "ownerId": 15,
+      "breed": "Labrador retriver",
+      "dateOfBirth": "2023-07-03",
+      "chipNumber": "191635926996658",
+      "weightKg": 28.09,
+      "neutered": false
+    },
+    {
+      "id": 34,
+      "name": "Mrvica",
+      "speciesId": 5,
+      "ownerId": 4,
+      "breed": "Bradata agama",
+      "dateOfBirth": "2021-04-28",
+      "weightKg": 0.49,
+      "neutered": false
+    },
+    {
+      "id": 35,
+      "name": "Mia",
+      "speciesId": 1,
+      "ownerId": 13,
+      "breed": "Zlatni retriver",
+      "dateOfBirth": "2017-02-19",
+      "chipNumber": "191517003681565",
+      "weightKg": 27.67,
+      "neutered": true
+    },
+    {
+      "id": 36,
+      "name": "Medo",
+      "speciesId": 1,
+      "ownerId": 5,
+      "breed": "Jack Russell terijer",
+      "dateOfBirth": "2025-08-20",
+      "chipNumber": "191588919143500",
+      "weightKg": 5.18,
+      "neutered": false
+    },
+    {
+      "id": 37,
+      "name": "Charlie",
+      "speciesId": 2,
+      "ownerId": 3,
+      "breed": "Europska kratkodlaka",
+      "dateOfBirth": "2018-01-26",
+      "chipNumber": "191606865121100",
+      "weightKg": 3.46,
+      "neutered": true
+    },
+    {
+      "id": 38,
+      "name": "Mrvica",
+      "speciesId": 1,
+      "ownerId": 18,
+      "breed": "Zlatni retriver",
+      "dateOfBirth": "2017-10-05",
+      "chipNumber": "191704811994768",
+      "weightKg": 28.29,
+      "neutered": false
+    },
+    {
+      "id": 39,
+      "name": "Mia",
+      "speciesId": 6,
+      "ownerId": 9,
+      "breed": "Zamorac",
+      "dateOfBirth": "2019-09-11",
+      "weightKg": 1.04,
+      "neutered": false
+    },
+    {
+      "id": 40,
+      "name": "Pegi",
+      "speciesId": 5,
+      "ownerId": 18,
+      "breed": "Bradata agama",
+      "dateOfBirth": "2018-02-26",
+      "weightKg": 0.42,
+      "neutered": false
+    },
+    {
+      "id": 41,
+      "name": "Šapica",
+      "speciesId": 1,
+      "ownerId": 10,
+      "breed": "Labrador retriver",
+      "dateOfBirth": "2021-12-09",
+      "chipNumber": "191279567285402",
+      "weightKg": 25.22,
+      "neutered": true
+    },
+    {
+      "id": 42,
+      "name": "Rocky",
+      "speciesId": 1,
+      "ownerId": 19,
+      "breed": "Mješanac",
+      "dateOfBirth": "2021-09-21",
+      "chipNumber": "191017115169973",
+      "weightKg": 8.56,
+      "neutered": true
+    },
+    {
+      "id": 43,
+      "name": "Rocky",
+      "speciesId": 1,
+      "ownerId": 14,
+      "breed": "Mješanac",
+      "dateOfBirth": "2017-04-10",
+      "chipNumber": "191292983613975",
+      "weightKg": 29.87,
+      "neutered": true
+    },
+    {
+      "id": 44,
+      "name": "Bruno",
+      "speciesId": 2,
+      "ownerId": 8,
+      "breed": "Mješanac",
+      "dateOfBirth": "2014-03-02",
+      "chipNumber": "191977406414128",
+      "weightKg": 5.14,
+      "neutered": true
+    },
+    {
+      "id": 45,
+      "name": "Charlie",
+      "speciesId": 3,
+      "ownerId": 1,
+      "breed": "Patuljasti kunić",
+      "dateOfBirth": "2018-07-10",
+      "weightKg": 1.01,
+      "neutered": false
+    },
+    {
+      "id": 46,
+      "name": "Mia",
+      "speciesId": 4,
+      "ownerId": 10,
+      "breed": "Kanarinac",
+      "dateOfBirth": "2018-04-05",
+      "weightKg": 0.02,
+      "neutered": false
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "patientId": 26,
+      "date": "2026-09-02",
+      "time": "13:00",
+      "reason": "Pregled nakon kastracije",
+      "status": "done",
+      "price": 40,
+      "vetNote": "Preporučena promjena prehrane."
+    },
+    {
+      "id": 2,
+      "patientId": 24,
+      "date": "2026-09-02",
+      "time": "16:30",
+      "reason": "Redovito cijepljenje",
+      "status": "cancelled"
+    },
+    {
+      "id": 3,
+      "patientId": 18,
+      "date": "2026-09-07",
+      "time": "11:30",
+      "reason": "Šepanje na stražnju nogu",
+      "status": "done",
+      "price": 25,
+      "vetNote": "Kontrola za dva tjedna."
+    },
+    {
+      "id": 4,
+      "patientId": 19,
+      "date": "2026-09-07",
+      "time": "14:30",
+      "reason": "Tretman protiv parazita",
+      "status": "done",
+      "price": 70,
+      "vetNote": "Propisan antibiotik tijekom sedam dana."
+    },
+    {
+      "id": 5,
+      "patientId": 19,
+      "date": "2026-09-07",
+      "time": "18:00",
+      "reason": "Upala uha",
+      "status": "cancelled"
+    },
+    {
+      "id": 6,
+      "patientId": 44,
+      "date": "2026-09-08",
+      "time": "12:30",
+      "reason": "Ugradnja mikročipa",
+      "status": "cancelled"
+    },
+    {
+      "id": 7,
+      "patientId": 17,
+      "date": "2026-09-08",
+      "time": "17:00",
+      "reason": "Šepanje na stražnju nogu",
+      "status": "done",
+      "price": 40,
+      "vetNote": "Propisan antibiotik tijekom sedam dana."
+    },
+    {
+      "id": 8,
+      "patientId": 43,
+      "date": "2026-09-09",
+      "time": "11:30",
+      "reason": "Ugradnja mikročipa",
+      "status": "done",
+      "price": 30,
+      "vetNote": "Propisan antibiotik tijekom sedam dana."
+    },
+    {
+      "id": 9,
+      "patientId": 14,
+      "date": "2026-09-10",
+      "time": "14:00",
+      "reason": "Redovito cijepljenje",
+      "status": "cancelled"
+    },
+    {
+      "id": 10,
+      "patientId": 46,
+      "date": "2026-09-10",
+      "time": "19:30",
+      "reason": "Čišćenje zubnog kamenca",
+      "status": "done",
+      "price": 25,
+      "vetNote": "Cijepljenje obavljeno bez komplikacija."
+    },
+    {
+      "id": 11,
+      "patientId": 34,
+      "date": "2026-09-15",
+      "time": "09:30",
+      "reason": "Svrbež i crvenilo kože",
+      "status": "done",
+      "price": 55,
+      "vetNote": "Cijepljenje obavljeno bez komplikacija."
+    },
+    {
+      "id": 12,
+      "patientId": 42,
+      "date": "2026-09-16",
+      "time": "12:00",
+      "reason": "Proljev i povraćanje",
+      "status": "done",
+      "price": 35,
+      "vetNote": "Stanje uredno."
+    },
+    {
+      "id": 13,
+      "patientId": 37,
+      "date": "2026-09-16",
+      "time": "13:30",
+      "reason": "Tretman protiv parazita",
+      "status": "done",
+      "price": 40,
+      "vetNote": "Kontrola za dva tjedna."
+    },
+    {
+      "id": 14,
+      "patientId": 7,
+      "date": "2026-09-16",
+      "time": "14:00",
+      "reason": "Proljev i povraćanje",
+      "status": "done",
+      "price": 25,
+      "vetNote": "Stanje uredno."
+    },
+    {
+      "id": 15,
+      "patientId": 23,
+      "date": "2026-09-16",
+      "time": "14:30",
+      "reason": "Čišćenje zubnog kamenca",
+      "status": "done",
+      "price": 35,
+      "vetNote": "Preporučena promjena prehrane."
+    },
+    {
+      "id": 16,
+      "patientId": 36,
+      "date": "2026-09-22",
+      "time": "16:00",
+      "reason": "Kontrola rane",
+      "status": "done",
+      "price": 35,
+      "vetNote": "Kontrola za dva tjedna."
+    },
+    {
+      "id": 17,
+      "patientId": 37,
+      "date": "2026-09-23",
+      "time": "17:00",
+      "reason": "Upala uha",
+      "status": "done",
+      "price": 55,
+      "vetNote": "Propisan antibiotik tijekom sedam dana."
+    },
+    {
+      "id": 18,
+      "patientId": 45,
+      "date": "2026-09-24",
+      "time": "09:00",
+      "reason": "Proljev i povraćanje",
+      "status": "done",
+      "price": 35,
+      "vetNote": "Propisan antibiotik tijekom sedam dana."
+    },
+    {
+      "id": 19,
+      "patientId": 17,
+      "date": "2026-09-24",
+      "time": "11:00",
+      "reason": "Redovito cijepljenje",
+      "status": "done",
+      "price": 90,
+      "vetNote": "Preporučena promjena prehrane."
+    },
+    {
+      "id": 20,
+      "patientId": 4,
+      "date": "2026-09-24",
+      "time": "12:00",
+      "reason": "Redovito cijepljenje",
+      "status": "done",
+      "price": 25,
+      "vetNote": "Stanje uredno."
+    },
+    {
+      "id": 21,
+      "patientId": 43,
+      "date": "2026-09-28",
+      "time": "16:30",
+      "reason": "Svrbež i crvenilo kože",
+      "status": "scheduled"
+    },
+    {
+      "id": 22,
+      "patientId": 8,
+      "date": "2026-10-01",
+      "time": "12:00",
+      "reason": "Upala uha",
+      "status": "scheduled"
+    },
+    {
+      "id": 23,
+      "patientId": 29,
+      "date": "2026-10-01",
+      "time": "13:00",
+      "reason": "Proljev i povraćanje",
+      "status": "scheduled"
+    },
+    {
+      "id": 24,
+      "patientId": 36,
+      "date": "2026-10-02",
+      "time": "08:00",
+      "reason": "Proljev i povraćanje",
+      "status": "scheduled"
+    },
+    {
+      "id": 25,
+      "patientId": 19,
+      "date": "2026-10-02",
+      "time": "14:30",
+      "reason": "Ugradnja mikročipa",
+      "status": "scheduled"
+    },
+    {
+      "id": 26,
+      "patientId": 15,
+      "date": "2026-10-02",
+      "time": "17:30",
+      "reason": "Redovito cijepljenje",
+      "status": "scheduled"
+    },
+    {
+      "id": 27,
+      "patientId": 6,
+      "date": "2026-10-02",
+      "time": "19:00",
+      "reason": "Tretman protiv parazita",
+      "status": "scheduled"
+    },
+    {
+      "id": 28,
+      "patientId": 20,
+      "date": "2026-10-05",
+      "time": "08:00",
+      "reason": "Kontrola rane",
+      "status": "scheduled"
+    },
+    {
+      "id": 29,
+      "patientId": 28,
+      "date": "2026-10-05",
+      "time": "14:00",
+      "reason": "Tretman protiv parazita",
+      "status": "scheduled"
+    },
+    {
+      "id": 30,
+      "patientId": 46,
+      "date": "2026-10-05",
+      "time": "16:30",
+      "reason": "Pregled nakon kastracije",
+      "status": "scheduled"
+    },
+    {
+      "id": 31,
+      "patientId": 21,
+      "date": "2026-10-08",
+      "time": "08:30",
+      "reason": "Upala uha",
+      "status": "scheduled"
+    },
+    {
+      "id": 32,
+      "patientId": 42,
+      "date": "2026-10-08",
+      "time": "14:30",
+      "reason": "Pregled nakon kastracije",
+      "status": "scheduled"
+    },
+    {
+      "id": 33,
+      "patientId": 46,
+      "date": "2026-10-13",
+      "time": "17:30",
+      "reason": "Svrbež i crvenilo kože",
+      "status": "scheduled"
+    },
+    {
+      "id": 34,
+      "patientId": 38,
+      "date": "2026-10-16",
+      "time": "09:00",
+      "reason": "Upala uha",
+      "status": "scheduled"
+    },
+    {
+      "id": 35,
+      "patientId": 18,
+      "date": "2026-10-19",
+      "time": "12:30",
+      "reason": "Svrbež i crvenilo kože",
+      "status": "scheduled"
+    },
+    {
+      "id": 36,
+      "patientId": 41,
+      "date": "2026-10-22",
+      "time": "17:00",
+      "reason": "Gubitak apetita",
+      "status": "scheduled"
+    },
+    {
+      "id": 37,
+      "patientId": 38,
+      "date": "2026-10-23",
+      "time": "16:00",
+      "reason": "Čišćenje zubnog kamenca",
+      "status": "scheduled"
+    },
+    {
+      "id": 38,
+      "patientId": 26,
+      "date": "2026-10-23",
+      "time": "17:00",
+      "reason": "Šepanje na stražnju nogu",
+      "status": "scheduled"
+    },
+    {
+      "id": 39,
+      "patientId": 2,
+      "date": "2026-10-26",
+      "time": "09:30",
+      "reason": "Tretman protiv parazita",
+      "status": "scheduled"
+    },
+    {
+      "id": 40,
+      "patientId": 28,
+      "date": "2026-10-26",
+      "time": "15:30",
+      "reason": "Svrbež i crvenilo kože",
+      "status": "scheduled"
+    },
+    {
+      "id": 41,
+      "patientId": 41,
+      "date": "2026-10-26",
+      "time": "16:30",
+      "reason": "Gubitak apetita",
+      "status": "scheduled"
+    },
+    {
+      "id": 42,
+      "patientId": 31,
+      "date": "2026-10-28",
+      "time": "17:30",
+      "reason": "Svrbež i crvenilo kože",
+      "status": "scheduled"
+    },
+    {
+      "id": 43,
+      "patientId": 37,
+      "date": "2026-10-29",
+      "time": "09:00",
+      "reason": "Upala uha",
+      "status": "scheduled"
+    },
+    {
+      "id": 44,
+      "patientId": 14,
+      "date": "2026-10-30",
+      "time": "12:30",
+      "reason": "Proljev i povraćanje",
+      "status": "scheduled"
+    },
+    {
+      "id": 45,
+      "patientId": 24,
+      "date": "2026-10-30",
+      "time": "17:30",
+      "reason": "Kontrolni pregled",
+      "status": "scheduled"
+    },
+    {
+      "id": 46,
+      "patientId": 31,
+      "date": "2026-10-30",
+      "time": "19:00",
+      "reason": "Gubitak apetita",
+      "status": "scheduled"
+    },
+    {
+      "id": 47,
+      "patientId": 26,
+      "date": "2026-11-02",
+      "time": "11:00",
+      "reason": "Proljev i povraćanje",
+      "status": "scheduled"
+    },
+    {
+      "id": 48,
+      "patientId": 25,
+      "date": "2026-11-02",
+      "time": "17:00",
+      "reason": "Šepanje na stražnju nogu",
+      "status": "scheduled"
+    },
+    {
+      "id": 49,
+      "patientId": 15,
+      "date": "2026-11-03",
+      "time": "12:00",
+      "reason": "Kontrola rane",
+      "status": "scheduled"
+    },
+    {
+      "id": 50,
+      "patientId": 40,
+      "date": "2026-11-04",
+      "time": "10:30",
+      "reason": "Čišćenje zubnog kamenca",
+      "status": "scheduled"
+    },
+    {
+      "id": 51,
+      "patientId": 2,
+      "date": "2026-11-04",
+      "time": "14:30",
+      "reason": "Čišćenje zubnog kamenca",
+      "status": "scheduled"
+    },
+    {
+      "id": 52,
+      "patientId": 25,
+      "date": "2026-11-05",
+      "time": "09:00",
+      "reason": "Kontrola rane",
+      "status": "scheduled"
+    },
+    {
+      "id": 53,
+      "patientId": 30,
+      "date": "2026-11-05",
+      "time": "18:00",
+      "reason": "Ugradnja mikročipa",
+      "status": "scheduled"
+    },
+    {
+      "id": 54,
+      "patientId": 1,
+      "date": "2026-11-06",
+      "time": "10:00",
+      "reason": "Tretman protiv parazita",
+      "status": "scheduled"
+    },
+    {
+      "id": 55,
+      "patientId": 41,
+      "date": "2026-11-09",
+      "time": "17:00",
+      "reason": "Kontrolni pregled",
+      "status": "scheduled"
+    },
+    {
+      "id": 56,
+      "patientId": 46,
+      "date": "2026-11-10",
+      "time": "16:30",
+      "reason": "Proljev i povraćanje",
+      "status": "scheduled"
+    },
+    {
+      "id": 57,
+      "patientId": 21,
+      "date": "2026-11-11",
+      "time": "14:00",
+      "reason": "Upala uha",
+      "status": "scheduled"
+    },
+    {
+      "id": 58,
+      "patientId": 26,
+      "date": "2026-11-11",
+      "time": "19:30",
+      "reason": "Proljev i povraćanje",
+      "status": "scheduled"
+    },
+    {
+      "id": 59,
+      "patientId": 1,
+      "date": "2026-11-12",
+      "time": "12:00",
+      "reason": "Redovito cijepljenje",
+      "status": "scheduled"
+    },
+    {
+      "id": 60,
+      "patientId": 10,
+      "date": "2026-11-12",
+      "time": "14:00",
+      "reason": "Čišćenje zubnog kamenca",
+      "status": "scheduled"
+    },
+    {
+      "id": 61,
+      "patientId": 11,
+      "date": "2026-11-13",
+      "time": "13:30",
+      "reason": "Pregled nakon kastracije",
+      "status": "scheduled"
+    },
+    {
+      "id": 62,
+      "patientId": 7,
+      "date": "2026-11-13",
+      "time": "17:30",
+      "reason": "Redovito cijepljenje",
+      "status": "scheduled"
+    },
+    {
+      "id": 63,
+      "patientId": 11,
+      "date": "2026-11-13",
+      "time": "19:00",
+      "reason": "Proljev i povraćanje",
+      "status": "scheduled"
+    },
+    {
+      "id": 64,
+      "patientId": 46,
+      "date": "2026-11-16",
+      "time": "10:00",
+      "reason": "Proljev i povraćanje",
+      "status": "scheduled"
+    },
+    {
+      "id": 65,
+      "patientId": 7,
+      "date": "2026-11-16",
+      "time": "15:00",
+      "reason": "Ugradnja mikročipa",
+      "status": "scheduled"
+    },
+    {
+      "id": 66,
+      "patientId": 14,
+      "date": "2026-11-17",
+      "time": "16:00",
+      "reason": "Čišćenje zubnog kamenca",
+      "status": "scheduled"
+    },
+    {
+      "id": 67,
+      "patientId": 37,
+      "date": "2026-11-19",
+      "time": "12:00",
+      "reason": "Pregled nakon kastracije",
+      "status": "scheduled"
+    },
+    {
+      "id": 68,
+      "patientId": 42,
+      "date": "2026-11-20",
+      "time": "19:30",
+      "reason": "Tretman protiv parazita",
+      "status": "scheduled"
+    },
+    {
+      "id": 69,
+      "patientId": 4,
+      "date": "2026-11-23",
+      "time": "09:30",
+      "reason": "Gubitak apetita",
+      "status": "scheduled"
+    },
+    {
+      "id": 70,
+      "patientId": 1,
+      "date": "2026-11-23",
+      "time": "16:00",
+      "reason": "Šepanje na stražnju nogu",
+      "status": "scheduled"
+    },
+    {
+      "id": 71,
+      "patientId": 17,
+      "date": "2026-11-24",
+      "time": "16:30",
+      "reason": "Šepanje na stražnju nogu",
+      "status": "scheduled"
+    },
+    {
+      "id": 72,
+      "patientId": 17,
+      "date": "2026-11-27",
+      "time": "11:30",
+      "reason": "Tretman protiv parazita",
+      "status": "scheduled"
+    },
+    {
+      "id": 73,
+      "patientId": 1,
+      "date": "2026-12-01",
+      "time": "15:30",
+      "reason": "Tretman protiv parazita",
+      "status": "scheduled"
+    },
+    {
+      "id": 74,
+      "patientId": 10,
+      "date": "2026-12-02",
+      "time": "08:30",
+      "reason": "Redovito cijepljenje",
+      "status": "scheduled"
+    },
+    {
+      "id": 75,
+      "patientId": 36,
+      "date": "2026-12-02",
+      "time": "14:00",
+      "reason": "Upala uha",
+      "status": "scheduled"
+    },
+    {
+      "id": 76,
+      "patientId": 4,
+      "date": "2026-12-02",
+      "time": "19:30",
+      "reason": "Kontrola rane",
+      "status": "scheduled"
+    },
+    {
+      "id": 77,
+      "patientId": 3,
+      "date": "2026-12-04",
+      "time": "13:00",
+      "reason": "Kontrolni pregled",
+      "status": "scheduled"
+    },
+    {
+      "id": 78,
+      "patientId": 19,
+      "date": "2026-12-07",
+      "time": "09:30",
+      "reason": "Svrbež i crvenilo kože",
+      "status": "scheduled"
+    },
+    {
+      "id": 79,
+      "patientId": 38,
+      "date": "2026-12-07",
+      "time": "17:00",
+      "reason": "Tretman protiv parazita",
+      "status": "scheduled"
+    },
+    {
+      "id": 80,
+      "patientId": 38,
+      "date": "2026-12-09",
+      "time": "11:00",
+      "reason": "Svrbež i crvenilo kože",
+      "status": "scheduled"
+    },
+    {
+      "id": 81,
+      "patientId": 19,
+      "date": "2026-12-09",
+      "time": "12:00",
+      "reason": "Redovito cijepljenje",
+      "status": "scheduled"
+    },
+    {
+      "id": 82,
+      "patientId": 9,
+      "date": "2026-12-10",
+      "time": "13:00",
+      "reason": "Tretman protiv parazita",
+      "status": "scheduled"
+    },
+    {
+      "id": 83,
+      "patientId": 36,
+      "date": "2026-12-11",
+      "time": "11:30",
+      "reason": "Gubitak apetita",
+      "status": "scheduled"
+    },
+    {
+      "id": 84,
+      "patientId": 30,
+      "date": "2026-12-11",
+      "time": "13:30",
+      "reason": "Pregled nakon kastracije",
+      "status": "scheduled"
+    },
+    {
+      "id": 85,
+      "patientId": 12,
+      "date": "2026-12-14",
+      "time": "12:30",
+      "reason": "Upala uha",
+      "status": "scheduled"
+    },
+    {
+      "id": 86,
+      "patientId": 14,
+      "date": "2026-12-15",
+      "time": "08:30",
+      "reason": "Redovito cijepljenje",
+      "status": "scheduled"
+    },
+    {
+      "id": 87,
+      "patientId": 22,
+      "date": "2026-12-15",
+      "time": "16:30",
+      "reason": "Gubitak apetita",
+      "status": "scheduled"
+    },
+    {
+      "id": 88,
+      "patientId": 32,
+      "date": "2026-12-16",
+      "time": "15:30",
+      "reason": "Čišćenje zubnog kamenca",
+      "status": "scheduled"
+    },
+    {
+      "id": 89,
+      "patientId": 32,
+      "date": "2026-12-16",
+      "time": "18:30",
+      "reason": "Proljev i povraćanje",
+      "status": "scheduled"
+    },
+    {
+      "id": 90,
+      "patientId": 37,
+      "date": "2026-12-17",
+      "time": "18:00",
+      "reason": "Kontrolni pregled",
+      "status": "scheduled"
+    },
+    {
+      "id": 91,
+      "patientId": 34,
+      "date": "2026-12-18",
+      "time": "15:00",
+      "reason": "Svrbež i crvenilo kože",
+      "status": "scheduled"
+    },
+    {
+      "id": 92,
+      "patientId": 15,
+      "date": "2026-12-21",
+      "time": "15:30",
+      "reason": "Kontrola rane",
+      "status": "scheduled"
+    },
+    {
+      "id": 93,
+      "patientId": 30,
+      "date": "2026-12-28",
+      "time": "10:30",
+      "reason": "Upala uha",
+      "status": "scheduled"
+    },
+    {
+      "id": 94,
+      "patientId": 12,
+      "date": "2026-12-28",
+      "time": "17:30",
+      "reason": "Svrbež i crvenilo kože",
+      "status": "scheduled"
+    },
+    {
+      "id": 95,
+      "patientId": 13,
+      "date": "2026-12-29",
+      "time": "16:30",
+      "reason": "Šepanje na stražnju nogu",
+      "status": "scheduled"
+    },
+    {
+      "id": 96,
+      "patientId": 9,
+      "date": "2026-12-31",
+      "time": "08:00",
+      "reason": "Redovito cijepljenje",
+      "status": "scheduled"
+    },
+    {
+      "id": 97,
+      "patientId": 11,
+      "date": "2026-12-31",
+      "time": "14:00",
+      "reason": "Šepanje na stražnju nogu",
+      "status": "scheduled"
+    },
+    {
+      "id": 98,
+      "patientId": 24,
+      "date": "2027-01-01",
+      "time": "10:30",
+      "reason": "Svrbež i crvenilo kože",
+      "status": "scheduled"
+    },
+    {
+      "id": 99,
+      "patientId": 40,
+      "date": "2027-01-01",
+      "time": "14:30",
+      "reason": "Upala uha",
+      "status": "scheduled"
+    },
+    {
+      "id": 100,
+      "patientId": 44,
+      "date": "2027-01-01",
+      "time": "16:00",
+      "reason": "Svrbež i crvenilo kože",
+      "status": "scheduled"
+    },
+    {
+      "id": 101,
+      "patientId": 40,
+      "date": "2027-01-01",
+      "time": "18:00",
+      "reason": "Ugradnja mikročipa",
+      "status": "scheduled"
+    },
+    {
+      "id": 102,
+      "patientId": 29,
+      "date": "2027-01-05",
+      "time": "10:00",
+      "reason": "Šepanje na stražnju nogu",
+      "status": "scheduled"
+    },
+    {
+      "id": 103,
+      "patientId": 12,
+      "date": "2027-01-05",
+      "time": "16:00",
+      "reason": "Redovito cijepljenje",
+      "status": "scheduled"
+    },
+    {
+      "id": 104,
+      "patientId": 8,
+      "date": "2027-01-05",
+      "time": "16:30",
+      "reason": "Proljev i povraćanje",
+      "status": "scheduled"
+    },
+    {
+      "id": 105,
+      "patientId": 19,
+      "date": "2027-01-08",
+      "time": "13:00",
+      "reason": "Šepanje na stražnju nogu",
+      "status": "scheduled"
+    },
+    {
+      "id": 106,
+      "patientId": 40,
+      "date": "2027-01-11",
+      "time": "10:00",
+      "reason": "Redovito cijepljenje",
+      "status": "scheduled"
+    },
+    {
+      "id": 107,
+      "patientId": 28,
+      "date": "2027-01-11",
+      "time": "13:00",
+      "reason": "Upala uha",
+      "status": "scheduled"
+    },
+    {
+      "id": 108,
+      "patientId": 5,
+      "date": "2027-01-12",
+      "time": "10:30",
+      "reason": "Redovito cijepljenje",
+      "status": "scheduled"
+    },
+    {
+      "id": 109,
+      "patientId": 45,
+      "date": "2027-01-13",
+      "time": "08:30",
+      "reason": "Kontrolni pregled",
+      "status": "scheduled"
+    },
+    {
+      "id": 110,
+      "patientId": 12,
+      "date": "2027-01-13",
+      "time": "09:00",
+      "reason": "Čišćenje zubnog kamenca",
+      "status": "scheduled"
+    },
+    {
+      "id": 111,
+      "patientId": 9,
+      "date": "2027-01-13",
+      "time": "13:30",
+      "reason": "Gubitak apetita",
+      "status": "scheduled"
+    },
+    {
+      "id": 112,
+      "patientId": 21,
+      "date": "2027-01-13",
+      "time": "16:00",
+      "reason": "Kontrolni pregled",
+      "status": "scheduled"
+    },
+    {
+      "id": 113,
+      "patientId": 25,
+      "date": "2027-01-15",
+      "time": "14:00",
+      "reason": "Čišćenje zubnog kamenca",
+      "status": "scheduled"
+    },
+    {
+      "id": 114,
+      "patientId": 40,
+      "date": "2027-01-18",
+      "time": "14:00",
+      "reason": "Kontrolni pregled",
+      "status": "scheduled"
+    },
+    {
+      "id": 115,
+      "patientId": 25,
+      "date": "2027-01-18",
+      "time": "16:30",
+      "reason": "Svrbež i crvenilo kože",
+      "status": "scheduled"
+    },
+    {
+      "id": 116,
+      "patientId": 28,
+      "date": "2027-01-18",
+      "time": "19:00",
+      "reason": "Kontrola rane",
+      "status": "scheduled"
+    },
+    {
+      "id": 117,
+      "patientId": 8,
+      "date": "2027-01-20",
+      "time": "09:00",
+      "reason": "Tretman protiv parazita",
+      "status": "scheduled"
+    },
+    {
+      "id": 118,
+      "patientId": 34,
+      "date": "2027-01-20",
+      "time": "10:00",
+      "reason": "Svrbež i crvenilo kože",
+      "status": "scheduled"
+    },
+    {
+      "id": 119,
+      "patientId": 16,
+      "date": "2027-01-21",
+      "time": "09:00",
+      "reason": "Redovito cijepljenje",
+      "status": "scheduled"
+    },
+    {
+      "id": 120,
+      "patientId": 7,
+      "date": "2027-01-21",
+      "time": "15:30",
+      "reason": "Šepanje na stražnju nogu",
+      "status": "scheduled"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "dr. Maja Vuković",
+      "email": "maja.vukovic@vet-ambulanta.hr",
+      "role": "staff",
+      "passwordHash": "f6042ccbb4ebe03bd64307064d33a80b:8cee7c34a0055ff59aeb96d923028411ea991935555e2e3b74a83c881f7a8c6e"
+    },
+    {
+      "id": 2,
+      "name": "Filip Knežević",
+      "email": "filip.knezevic@vet-ambulanta.hr",
+      "role": "user",
+      "passwordHash": "b17c81da191bcd3a72323b00eba4ad95:6589daaf1b9c75acd57dd5eb665e11c1cd31ea637e8b87bb044216958747fc8b"
+    },
+    {
+      "id": 3,
+      "name": "Ispitni korisnik",
+      "email": "test@vet-ambulanta.hr",
+      "role": "user",
+      "passwordHash": "b17ec6d8521076e237b8ef9faeedf4b4:d72aac77650dd8b7999180ed1f15446bf63f1927eb92267e3747cba42e42e275"
+    }
+  ]
+}
