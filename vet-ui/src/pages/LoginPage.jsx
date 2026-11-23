@@ -2,16 +2,15 @@ import Card from '../components/ui/Card.jsx';
 import FormField from '../components/ui/FormField.jsx';
 
 export default function LoginPage() {
-  // TODO(logic): controlled fields, dispatch the login thunk, show the server message on 401,
-  // after success navigate(location.state?.from ?? '/patients').
   return (
     <div className="narrow">
       <Card title="Log in">
         <form className="form" noValidate onSubmit={(e) => e.preventDefault()}>
-          <FormField label="Email">{(p) => <input {...p} type="email" name="email" autoComplete="email" />}</FormField>
-          <FormField label="Password">{(p) => <input {...p} type="password" name="password" autoComplete="current-password" />}</FormField>
+          <FormField label="Email" type="text" name="name"/>
+          <FormField label="Password" type="password" name="password"/>
           <div className="form__actions">
             <button type="submit" className="btn">Log in</button>
+            <p>Don't have an account? <a href="/register"> Register here</a></p>
           </div>
         </form>
       </Card>
