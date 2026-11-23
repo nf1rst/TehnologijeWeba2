@@ -1,8 +1,22 @@
-import { NavLink, Outlet, Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { NavLink, Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
 
 export default function AppLayout() {
-  const user = null;
+  const[user, setUser]=useState(null)
+  const location = useLocation()
+  const navigate = useNavigate()
 
+  useEffect(()=>{
+    const savedUser=localStorage.getItem('user')
+    setUser(savedUser?JSON.parse(savedUser):null)
+    }, [location])
+
+    function handleLogout(){
+      localStorage.removeItem('token')
+      localStorage.removeItem('user')
+      setUser(null)
+      navigate('/login')
+    }
   return (
     <>
       <a className="skip-link" href="#main">Skip to content</a>
