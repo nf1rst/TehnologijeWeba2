@@ -17,7 +17,7 @@ export default function PatientsPage() {
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage]= useState(1)
   const [postsPerPage, setPostsPerPage]=useState(10)
-  const [search, setSearch]=useState("")
+  const [search, setSearch]=useState('')
   const [selectedSpeciesId, setSelectedSpeciesID]= useState('')
   const [neuteredFilter, setNeuteredFilter]=useState('')
   
@@ -59,7 +59,7 @@ export default function PatientsPage() {
 
   const query = search.trim().toLowerCase()
   const filteredPatients = safePatients.filter((patient)=>{
-    const matchesSearch = !query ||[patient.name, patient.breed].some((val)=>String(val??' ').toLowerCase().includes(query));
+    const matchesSearch = !query ||[patient.name, patient.breed].some((val)=>String(val??'').toLowerCase().includes(query));
 
     const matchesSpecies = !selectedSpeciesId || String(patient.speciesId) === String(selectedSpeciesId);
 
@@ -84,7 +84,7 @@ export default function PatientsPage() {
 
       <Card>
         <div className="toolbar">
-          <SearchBox  onChange={(newText)=>{
+          <SearchBox value={search} onChange={(newText)=>{
             setSearch(newText);
             setCurrentPage(1)
           }} label="Search patients" placeholder="Name, breed, chip" />
