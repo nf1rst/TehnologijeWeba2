@@ -7,6 +7,7 @@ import PatientAppointmentsTab from './pages/PatientAppointmentsTab.jsx';
 import PatientEditPage from './pages/PatientEditPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
+import RegisterPage from './pages/RegisterPage.jsx';
 
 // Route table only. No logic here (I3: 4+ routes, one parameterized, one nested, shared layout, 404).
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <Route index element={<PatientsPage />} />
         <Route path="patients" element={<PatientsPage />} />
         <Route path="login" element={<LoginPage />} />
+        <Route path="register" element={<RegisterPage/>}/>
 
         <Route element={<ProtectedRoute />}>
           <Route path="patients/new" element={<PatientEditPage />} />
