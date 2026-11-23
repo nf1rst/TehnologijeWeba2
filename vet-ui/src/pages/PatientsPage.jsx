@@ -18,6 +18,8 @@ export default function PatientsPage() {
   const [currentPage, setCurrentPage]= useState(1)
   const [postsPerPage, setPostsPerPage]=useState(10)
   const [search, setSearch]=useState("")
+  const [selectedSpeciesId, setSelectedSpeciesID]= useState('')
+  const [neuteredFilter, setNeuteredFilter]=useState('')
   
 
   useEffect(()=>{
@@ -56,11 +58,20 @@ export default function PatientsPage() {
   const safePatients = Array.isArray(patients) ? patients : [];
 
   const query = search.trim().toLowerCase()
-  const filteredPatients = query?
-    safePatients.filter((patient)=>Object.values(patient).some((val)=>
-    String(val??"").toLowerCase().includes(query))):safePatients
+  const filteredPatients = safePatients.filter((patient)=>{
 
-  const totalPages = Math.max(1, Math.ceil(safePatients.length / postsPerPage));
+    const matchesSearch = !query ||[patient.name, patient.breed, patient.chip].some((val)=>{
+      String(val??' ').toLowerCase().includes(qeuery)
+    });
+
+    const matchesSpecies = !selectedSpeciesId || String(patient.speciesId) === String(selectedSpeciesId);
+
+    const matchesNeutered = !neuteredFilter ||String(patient.neutered) === String(neuteredFilter);
+
+    return matchesSearch && matchesSpecies && matchesNeutered;
+  });
+
+  const totalPages = Math.max(1, Math.ceil(filteredPatients.length / postsPerPage));
 
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
@@ -80,7 +91,18 @@ export default function PatientsPage() {
             setSearch(newText);
             setCurrentPage(1)
           }} label="Search patients" placeholder="Name, breed, chip" />
-          <PatientFilters species={species} speciesId="" neutered="" onSpeciesChange={() => {}} onNeuteredChange={() => {}} onReset={() => {}} />
+          <PatientFilters species={species} speciesId={selectedSpeciesId} neutered={neuteredFilter} onSpeciesChange={(id)=>{
+            setSelectedSpeciesID(id)
+            setCurrentPage(1)
+          }} onNeuteredChange={(neutered)=>{
+            setNeuteredFilter(neutered)
+            setCurrentPage(1)
+          }} onReset={() =>{
+            setSearch('')
+            setSelectedSpeciesID('')
+            setSpecies('')
+            setNeuteredFilter('')
+          }} />
         </div>
 
           <DataTable
