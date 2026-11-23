@@ -37,7 +37,7 @@ export default function RegisterPage(){
             setSubmitting(true)
             var response =  await registrationHttp.register({name, email, password});
             localStorage.setItem('token', response.token)
-            localStorage.setItem('user', JSON.stringify(data.user))
+            localStorage.setItem('user', JSON.stringify(response.user))
             navigator('/login')
         }
         catch(err){
