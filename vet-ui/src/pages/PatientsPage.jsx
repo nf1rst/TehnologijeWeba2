@@ -59,10 +59,7 @@ export default function PatientsPage() {
 
   const query = search.trim().toLowerCase()
   const filteredPatients = safePatients.filter((patient)=>{
-
-    const matchesSearch = !query ||[patient.name, patient.breed, patient.chip].some((val)=>{
-      String(val??' ').toLowerCase().includes(qeuery)
-    });
+    const matchesSearch = !query ||[patient.name, patient.breed].some((val)=>String(val??' ').toLowerCase().includes(query));
 
     const matchesSpecies = !selectedSpeciesId || String(patient.speciesId) === String(selectedSpeciesId);
 
@@ -100,8 +97,8 @@ export default function PatientsPage() {
           }} onReset={() =>{
             setSearch('')
             setSelectedSpeciesID('')
-            setSpecies('')
             setNeuteredFilter('')
+            setCurrentPage(1)
           }} />
         </div>
 
