@@ -20,7 +20,6 @@ export default function PatientsPage() {
   const [search, setSearch]=useState('')
   const [selectedSpeciesId, setSelectedSpeciesID]= useState('')
   const [neuteredFilter, setNeuteredFilter]=useState('')
-  
 
   useEffect(()=>{
     async function loadPatients(){
