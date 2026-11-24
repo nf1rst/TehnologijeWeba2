@@ -1,50 +1,40 @@
 import FormField from '../ui/FormField.jsx';
 
-// Create and edit share this form. Presentational only.
-// fieldErrors: { fieldName: message } from the client OR the server's 400 `fields`.
-// submitting: disables the button (double-submit guard).
-// TODO(logic): control it with a form hook, validate with a pure function in logic/validation.js,
-// and merge server `fields` into fieldErrors.
+//label type name 
+
+// | Polje | Vrsta | Obavezno | Pravila | Opis |
+// |---|---|---|---|---|
+// | `id` | broj | — | dodjeljuje poslužitelj | identifikator |
+// | `name` | tekst | da | 1–40 znakova | ime životinje |
+// | `speciesId` | identifikator | da | → /species | vrsta |
+// | `ownerId` | identifikator | da | → /owners | vlasnik |
+// | `breed` | tekst | ne | najviše 60 znakova | pasmina |
+// | `dateOfBirth` | datum GGGG-MM-DD | da |  | datum rođenja |
+// | `chipNumber` | tekst | ne | oblik `^\d{15}$`, jedinstveno | broj mikročipa, 15 znamenaka |
+// | `weightKg` | broj | da | od 0,01 do 150 | masa u kilogramima |
+// | `neutered` | da/ne | ne | zadano: `false` | kastrirano ili sterilizirano |
+
+
 export default function PatientForm({ values = {}, fieldErrors = {}, species = [], owners = [], submitting = false, onChange, onSubmit, onCancel }) {
+  const speciesOptions = species.map((s)=>({value: s.id, label :s.name}))
+  const ownersOption = owners.map(o=>({value: o.id, label: `${o.firstName} ${o.lastName}`}))
+  
   return (
     <form className="form" noValidate onSubmit={onSubmit}>
-      <FormField label="Name" error={fieldErrors.name}>
-        {(p) => <input {...p} name="name" value={values.name ?? ''} onChange={onChange} />}
-      </FormField>
 
-      <FormField label="Species" error={fieldErrors.speciesId}>
-        {(p) => (
-          <select {...p} name="speciesId" value={values.speciesId ?? ''} onChange={onChange}>
-            <option value="">Select species</option>
-            {species.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
-          </select>
-        )}
-      </FormField>
+      <FormField label="Name" name="name" value={values.name??''} onChange={onchange} error={fieldErrors.name} />
 
-      <FormField label="Owner" error={fieldErrors.ownerId}>
-        {(p) => (
-          <select {...p} name="ownerId" value={values.ownerId ?? ''} onChange={onChange}>
-            <option value="">Select owner</option>
-            {owners.map((o) => <option key={o.id} value={o.id}>{o.firstName} {o.lastName}</option>)}
-          </select>
-        )}
-      </FormField>
+      <FormField label="Species" name="speciesId" value={values.speciesId??''} onChange={onchange} error={fieldErrors.speciesId} options={speciesOptions}  />
 
-      <FormField label="Breed (optional)" error={fieldErrors.breed}>
-        {(p) => <input {...p} name="breed" value={values.breed ?? ''} onChange={onChange} />}
-      </FormField>
+      <FormField label="Owner" name="ownerId" value={values.ownerId??''} onChange={onchange} error={fieldErrors.ownerId} options={ownersOption} />
 
-      <FormField label="Date of birth" error={fieldErrors.dateOfBirth}>
-        {(p) => <input {...p} type="date" name="dateOfBirth" value={values.dateOfBirth ?? ''} onChange={onChange} />}
-      </FormField>
+      <FormField label="Breed(optional)" value={values.breed??''} onChange={onchange} error={fieldErrors.breed}/>
 
-      <FormField label="Chip number" hint="15 digits. Required for dogs." error={fieldErrors.chipNumber}>
-        {(p) => <input {...p} name="chipNumber" inputMode="numeric" value={values.chipNumber ?? ''} onChange={onChange} />}
-      </FormField>
+      <FormField label="Date of birth" error={fieldErrors.dateOfBirth} value={values.dateOfBirth??''} name="dateOfBirth" type="date"  onChange={onchange}/>
 
-      <FormField label="Weight (kg)" error={fieldErrors.weightKg}>
-        {(p) => <input {...p} type="number" step="0.01" name="weightKg" value={values.weightKg ?? ''} onChange={onChange} />}
-      </FormField>
+      <FormField label="Chip number" value={values.chipNumber??''} hint="15 digits. Required for dogs" onChange={onchange} error={fieldErrors.chipNumber} name="chipNumber"/>
+
+      <FormField label="Weight(kg)" onChange={onchange} value={values.weight??''} error={fieldErrors.weight} name="weight" />
 
       <div className="field field--check">
         <input id="neutered" type="checkbox" name="neutered" checked={Boolean(values.neutered)} onChange={onChange} />

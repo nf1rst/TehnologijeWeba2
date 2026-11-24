@@ -29,7 +29,7 @@ export default function AppLayout() {
           {user ? (
             <>
               <span>{user.name}</span>
-              <button type="button" className="btn btn--ghost">Log out</button>
+              <button type="button" className="btn btn--ghost" onClick={handleLogout}>Log out</button>
             </>
           ) : (
             <Link to="/login" className="btn btn--ghost">Log in</Link>
