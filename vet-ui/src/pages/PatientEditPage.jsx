@@ -90,8 +90,8 @@ export default function PatientEditPage() {
   return (
     <Card title={isEdit ? 'Edit patient' : 'New patient'}>
       <PatientForm
-        values={{values}}
-        fieldErrors={{fieldErrors}}
+        values={values}
+        fieldErrors={fieldErrors}
         species={species}
         owners={owners}
         submitting={submitting}

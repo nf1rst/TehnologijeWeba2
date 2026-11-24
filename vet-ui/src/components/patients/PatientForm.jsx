@@ -9,7 +9,7 @@ export default function PatientForm({ values = {}, fieldErrors = {}, species = [
   return (
     <form className="form" noValidate onSubmit={onSubmit}>
       <FormField label="Name" name="name" value={values.name} onChange={onChange} error={fieldErrors.name} />
-      <FormField label="Species" name="speciesId" value={values.speciesId} onChange={onChange} error={fieldErrors.speciesId} options={speciesOptions} />
+      <FormField label="Species" name="speciesId" value={values.speciesId} onChange={onChange} error={fieldErrors.speciesId} options={speciesOptions}/>
       <FormField label="Owner" name="ownerId" value={values.ownerId} onChange={onChange} error={fieldErrors.ownerId} options={ownerOption} />
       <FormField label="Breed (optional)" name="breed" value={values.breed} onChange={onChange} error={fieldErrors.breed} />
       <FormField label="Date of birth" name="dateOfBirth" type="date" value={values.dateOfBirth} onChange={onChange} error={fieldErrors.dateOfBirth} />
