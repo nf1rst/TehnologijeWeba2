@@ -5,24 +5,18 @@ export default function FormField({ label, error, hint, options,...inputProps })
   const errorId = `${id}-error`;
   const hintId = `${id}-hint`;
 
-  const sharedProps = {
-    id,
-    'aria-invalid': Boolean(error),
-    'aria-describedby': error? errorId: hint?hintId:undefined,
-    ...inputProps};
-
   return (
     <div className={`field${error ? ' field--error' : ''}`}>
       <label htmlFor={id}>{label}</label>
 
     {options? 
-      <select {...sharedProps}>
+      <select {...inputProps}>
         <option value="">Select...</option>
         {options.map((opt)=>(
           <option key={opt.value} value={opt.value}>{opt.label}</option>
         ))};
       </select>:(
-        <input{...sharedProps}/>
+        <input{...inputProps}/>
       )}
       
       {hint && <p id={hintId} className="field__hint">{hint}</p>}
