@@ -48,7 +48,7 @@ export default function LoginPage() {
     <div className="narrow">
       <Card title="Log in">
         <form className="form" noValidate onSubmit={handleLogin}>
-          <FormField label="Email" type="text" name="email"/>
+          <FormField label="Email" type="text" name="email" />
           <FormField label="Password" type="password" name="password"/>
           <div className="form__actions">
             <button type="submit" disabled={submitting} className="btn">{submitting? 'Submitting': 'Login'}</button>
